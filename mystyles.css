@@ -96,6 +96,11 @@ body {
 }
 /* from traversia ===================================*/
 
+.where-am-i{
+    padding: 20px 0px 0px 20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
 
 .main{
 display: grid;
@@ -240,4 +245,14 @@ grid-template-areas:
     display: grid;
     justify-self: center;
     align-self: center;
+}
+
+.fb, .tw, .yb, a:hover{
+	text-decoration: underline;
+    color:black;
+}
+
+.fb, .tw, .yb, a{
+	text-decoration: none;
+    color:black;
 }
