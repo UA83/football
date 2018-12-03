@@ -237,8 +237,8 @@ grid-template-areas:
     background: black;
     color: gold;
     font-weight: 600;
+    text-decoration: none;
 }
-
 
 
 .fb, .tw, .yb {
@@ -247,12 +247,12 @@ grid-template-areas:
     align-self: center;
 }
 
-.fb, .tw, .yb, a:hover{
-	text-decoration: underline;
-    color:black;
-}
 
 .fb, .tw, .yb, a{
-	text-decoration: none;
+    text-decoration: none;
+    color:black;
+}
+.fb, .tw, .yb, a:hover{
+    text-decoration: underline;
     color:black;
 }
