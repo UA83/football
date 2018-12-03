@@ -187,7 +187,7 @@ grid-template-areas:
     padding: 30px;
     margin-top: 20px;
     grid-template-areas: 
-      ". . . social icons";
+      "footer-menu footer-menu . social icons";
     }
 
 .social{
@@ -207,8 +207,34 @@ grid-template-areas:
     display: grid;
     grid-template-areas: 
     "fb tw yb";
-
 }
+
+.footer-menu{
+    grid-area: footer-menu;
+    width: 100%;
+    padding-left: 10px;
+    justify-self: start;
+    align-self: center;
+}
+
+.footer-menu a{
+    background: gold;
+    padding: 0.5rem;
+	text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:black;
+	font-size: 0.9rem;
+}
+
+.footer-menu a:hover{
+    background: black;
+    color: gold;
+    font-weight: 600;
+}
+
+
 
 .fb, .tw, .yb {
     display: grid;
