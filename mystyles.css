@@ -1,0 +1,200 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 2rem 10rem;
+	line-height: 1.4rem;
+}
+.container{
+    background: #fff;
+}
+
+.header-top{
+    display: grid;
+    grid-gap: 1px;
+    grid-template-areas: 
+        "logo   page-title  page-title  page-title  page-title  page-title  page-title  page-title"
+        "logo   nav-top     nav-top     nav-top     nav-top     nav-top     nav-top     nav-top";
+}
+
+.logo{
+    grid-area: logo;
+    background: gold;
+    font-weight: 600;
+    font-size: 1.6rem;
+    display:flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+}
+
+.img-logo {
+    width: 100px;
+}
+
+
+.page-title{
+    grid-area: page-title;
+    background: gold;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.top-nav-container{
+    grid-area: nav-top;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1px;
+}
+
+
+.link a{
+    display: grid;
+    background: gold;
+    padding: 0.5rem;
+	text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:black;
+	font-size: 0.9rem;
+}
+
+.link a:hover{
+    background: black;
+    color: gold;
+    font-weight: 600;
+}
+
+/* from traversia =================================*/
+.banner {
+    /* grid-area: showcase; */
+	min-height: 350px;
+	background: url(imgs/banner.jpg);
+	background-size: cover;
+	background-position: top;
+	display:flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+}
+
+.banner h2 {
+    padding-left: 2rem;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	color: white;
+}
+
+.banner p {
+    padding-left: 2.1rem;
+	font-size: 0.9rem;
+	margin-top: 0;
+    color: white;
+    font-weight: 600;
+}
+/* from traversia ===================================*/
+
+
+.main{
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-auto-rows: minmax(100px, auto);
+grid-gap: 5px;
+padding-top: 20px;
+grid-template-areas: 
+  "lm lm lm lm lm lm a a"
+  "lm lm lm lm lm lm a a"
+  "mil mil mil mir mir mir a a";
+}
+
+.main-left{
+    grid-area: lm;
+    text-align: justify;
+    padding: 0px 2rem;
+    /* border: 1px gold solid; */
+}
+
+.main-left h1 {
+    font-size: 3rem;
+    text-align: left;
+    line-height: 2.5rem;
+}
+
+.main-left p {
+    font-size: 1.1rem;
+}
+
+
+.main-img-left, .main-img-right{
+    margin: auto;
+    padding: 0rem 5rem;
+    /* border: 1px gold solid; */
+    width: 30%;    
+}
+
+.main-img-left{
+    grid-area: mil;
+}
+
+.main-img-right{
+    grid-area: mir;
+}
+
+
+
+/* ASIDE */
+
+.aside img{
+    width: 30px;
+}
+
+
+.aside{
+    grid-area: a;
+    border-left: 1.5px #dbdbdb solid;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: repeat(10, 50px);
+}
+
+.box{
+    font-size: 1.3rem;
+}
+
+.home-team {
+    justify-self: end;
+    align-items: center;
+}
+.score{
+    justify-self: center;
+}
+.away-team {
+    justify-self: start;
+}
+
+
+/* FOOTER */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    background:gold;
+    padding: 30px;
+    grid-template-areas: 
+      ". . . . social icons";
+    }
+
+.social{
+    grid-area: social;
+    justify-self: end;
+    
+
+}
+
+.icons{
+    grid-area: icons;
+    border-left: 1.5px white solid;
+    padding-left: 10px;
+
+}
