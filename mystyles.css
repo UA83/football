@@ -241,18 +241,19 @@ grid-template-areas:
 }
 
 
+
 .fb, .tw, .yb {
     display: grid;
     justify-self: center;
     align-self: center;
 }
 
-
-.fb, .tw, .yb, a{
-    text-decoration: none;
-    color:black;
-}
 .fb, .tw, .yb, a:hover{
     text-decoration: underline;
+    color:black;
+}
+
+.fb, .tw, .yb, a{
+	text-decoration: none;
     color:black;
 }
