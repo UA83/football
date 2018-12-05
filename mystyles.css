@@ -307,8 +307,6 @@ grid-template-areas:
     .logo{
         grid-area: logo;
         background: gold;
-        align-items: center; /* Vertical center alignment */
-        justify-content: center; /* Horizontal center alignment */
     }
  
     .page-title{
