@@ -30,7 +30,6 @@ body {
     width: 100px;
 }
 
-
 .page-title{
     grid-area: page-title;
     background: gold;
@@ -289,7 +288,7 @@ grid-template-areas:
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 320px) {
     body {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin: 0px;
@@ -297,38 +296,56 @@ grid-template-areas:
     .header-top{
         display: grid;
         grid-gap: 1px;
-        grid-template-columns: auto;
         grid-template-areas:
         "logo" 
         "page-title"
         "nav-top";
     }
- 
+
     .logo{
         grid-area: logo;
         background: gold;
     }
- 
+
     .page-title{
         grid-area: page-title;
-        background: pink;
-        padding: 1rem;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 0.8rem;
-        align-items: center; /* Vertical center alignment */
-        justify-content: center; /* Horizontal center alignment */
+        font-size: 1rem;
+
     }
-    
+
     .top-nav-container{
         grid-area: nav-top;
         display: grid;
-        grid-template-columns: 1;
-        grid-gap: 1px;
+        grid-template-columns: repeat(1, 1fr);
     }
     
-}
+    .link a{
+        display: grid;
+        background: gold;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Should I do hover??? */
+    .link a:hover{
+        background: black;
+        color: gold;
+        font-weight: 600;
+        text-decoration: none;
+    }
 
+    .banner h2 {
+        line-height: 1.8rem;
+        padding-left: 1.5rem;
+        font-size: 2rem;
+    }
+    
+    .banner p {
+        padding: 1.5rem;
+        font-size: 1rem;
+     }
+
+
+}
 
 
