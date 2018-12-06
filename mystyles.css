@@ -1,5 +1,5 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 2rem 10rem;
     line-height: 1.4rem;
     background: #edf1f3;
@@ -195,6 +195,7 @@ grid-template-areas:
 /* FOOTER */
 .footer{
     display: grid;
+    border-top: 1px #dbdbdb solid;
     grid-template-columns: repeat(1, 1fr);
     font-size: 1rem;
     grid-gap: 10px;
@@ -289,7 +290,7 @@ grid-template-areas:
 ####################################### */
 @media (max-width: 1199px) {
     body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin: 0px;
         line-height: 1.4rem;
     }
@@ -302,6 +303,10 @@ grid-template-areas:
         font-size: 1.1rem;
         align-self: center;
     }
+
+    .footer-menu a{
+        padding: 0.5rem 0.8rem;
+        text-decoration: none;
 }
 
 
@@ -313,7 +318,7 @@ grid-template-areas:
 ####################################### */
 @media (max-width: 764px) {
     body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin: 0px;
     }
 
@@ -343,34 +348,12 @@ grid-template-areas:
         "social"
         "icons"
         "copyright";
-        }
-
-    .social{
-        grid-area: social;
-        justify-self: center;
     }
 
-    .icons{
-        grid-area: icons;
-        border-left: 0px;
-        justify-self: center;
-        grid-template-columns: 1fr;
+    .footer-menu a{
+        padding: 0.5rem 0.8rem;
     }
-
-    .footer-menu{
-        text-align: center;
-        grid-area: footer-menu;
-        width: 100%;
-        padding-left: 10px;
-    }
-    
-
-    .copyright{
-        grid-area:copyright;
-        width: 100%;
-        padding-left: 10px;
-        text-align: center
-    }
+        
 }
 
 
@@ -383,7 +366,7 @@ grid-template-areas:
 ####################################### */
 @media (max-width: 575px) {
     body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin: 0px;
     }
 
