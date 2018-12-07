@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="mystyles.css">
+    <title>[Contact] - Brazilian Championship</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="header-top">
+            <div class="logo"><img class="img-logo" src="imgs/logo.png" alt="Brazilian championship logo"></div>
+            <div class="page-title">Brazilian Championship 2018</div>
+            <div class="top-nav-container">
+                <div class="link"><a href="index.html">Home</a></div>
+                <div class="link"><a href="teams.html">Teams</a></div>
+                <div class="link"><a href="table.html">Table</a></div>
+                <div class="link"><a href="matches.html">Matches</a></div>
+                <div class="link"><a href="top-score.html">Top Score</a></div>
+                <div class="link"><a href="contact">Contact</a></div>
+            </div>
+        </nav>
+        <div class="where-am-i">
+            <h1>Contact</h1>
+        </div>
+        <div class="contact-main">
+
+            <form action="/page/SendContact" class="validatedform jqueryform" method="post">
+                <label for="title">
+                    Titles<span class="green">*</span>
+                </label>
+                <input class="form-control required" id="TITLE" minlength="3" name="TITLE" type="text" />
+            
+                <label for="NAME">
+                    First Name<span class="green">*</span>
+                </label>
+                <input class="form-control required" id="NAME" minlength="3" name="NAME" type="text" />
+            
+                <label for="SURNAME">
+                    Surname<span class="green">*</span>
+                </label>
+                <input class="form-control required" id="SURNAME" minlength="3" name="SURNAME" type="text" />
+                <label for="ADDRESS">
+                    Address<span class="green">*</span>
+                </label>
+                <textarea class="required form-control" id="ADDRESS" minlength="3" rows=4 name="ADDRESS" type="text"></textarea>
+                <label for="TOWN">
+                    Town<span class="green">*</span>
+                </label>
+                <input class="form-control required" id="TOWN" minlength="3" name="TOWN" type="text" />
+                <label for="COUNTY">
+                    County
+                </label>
+                <input id="COUNTY" minlength="3" name="COUNTY" type="text" class="form-control" />
+                <label for="EMAIL">
+                    Email address<span class="green">*</span>
+                </label>
+                <input class="form-control required email" id="EMAIL" name="EMAIL" type="text" />
+                <label for="TEL_HOME">
+                    Home Phone<span class="green">*</span>
+                </label>
+                <input id="TEL_HOME" name="TEL_HOME" type="text" class="form-control required" />
+                <label for="TEL_WORK">
+                    Work Phone
+                </label>
+                <input id="TEL_WORK" name="TEL_WORK" type="text" class="form-control" />
+                <label for="TEL_MOBILE">
+                    Mobile Phone
+                </label>
+                <input id="TEL_MOBILE" name="TEL_MOBILE" type="text" class="form-control" />
+                <label for="RETAILER">
+                    Retailer<span class="green">*</span>
+                </label>
+                <input id="RETAILER" name="RETAILER" type="text" class="form-control required" />
+                <label for="DOP">
+                    Date Purchased<span class="green">*</span> <em><small>Approximate date if unknown</small></em>
+                </label>
+                <input id="DOP" name="DOP" type="text" class="datepicker form-control" placeholder="dd/mm/yyyy" />
+                <label for="PRODUCT">Model number<span class="green">*</span></label>
+                <select id="PRODUCT" name="PRODUCT" class="required" data-placeholder="Enter your model number"></select>
+                <label for="SERIAL_NUMBER">Serial number<span class="green">*</span></label>
+                <input id="SERIAL_NUMBER" name="SERIAL_NUMBER" type="text" class="form-control" />
+                <label for="TANDC" class="checkbox">
+                    <input id="TANDC" name="TANDC" type="checkbox" class="required" required />
+                    <strong>I agree to the terms and conditions</strong>
+                </label>
+                <label for="BEKO" class="checkbox">
+                    <input id="BEKO" name="BEKO" type="checkbox" />
+                    Beko may contact me with promotions
+            
+                </label>
+                <label for="PARTNERS" class="checkbox">
+                    <input id="PARTNERS" name="PARTNERS" type="checkbox" />
+            
+                    Beko's Partners may contact me with promotions
+                </label>
+                <input type="submit" id="submit" class="btn btn-beko" value="Register Warranty" />
+                <span class="legend"><span class="green">*</span> Required</span>
+            </form>
+
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer-menu">
+                <a class="footer-link" href="index.html">Home</a>
+                <a class="footer-link" href="teams.html">Teams</a>
+                <a class="footer-link" href="table.html">Table</a>
+                <a class="footer-link" href="matches.html">Matches</a>
+                <a class="footer-link" href="top-score.html">Top Score</a>
+                <a class="footer-link" href="contact.html">Contact</a>
+            </div>
+
+            <div class="copyright"><em>Copyright © BR Footbal</em></div>
+
+            <div class="icons">
+                <a class="fb" href="http://facebook.com" target="_blank">Facebook</a>
+                <a class="yb" href="http://youtube.com" target="_blank">Youtube</a>
+                <a class="tw" href="http://twitter.com" target="_blank">Twitter</a>
+            </div>
+        </footer>
+    </div>
+    <!--  wrapper Ends  -->
+</body>
+
+</html>

@@ -5,6 +5,11 @@ body {
     background: #edf1f3;
 }
 
+a{
+    cursor: pointer;
+}
+/* from https://css-tricks.com/css-basics-styling-links-like-boss/ */
+
 /* 
 Wrapper */
 .container{
@@ -69,6 +74,11 @@ Wrapper */
     background: black;
     color: gold;
     font-weight: 600;
+}
+
+.active, .btn:hover {
+    background-color: #666;
+    color: white;
 }
 
 
