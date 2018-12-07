@@ -277,6 +277,41 @@ a.fb:hover, a.yb:hover, a.tw:hover{
     color:black;
 }
 
+/* ############# Page Teams ############ */
+
+.team-main{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-gap: 1rem;
+    padding: 0px 1rem;
+}
+
+.team-img{
+    display: grid;
+    height: 10rem;
+    
+}
+
+
+.gremio, .atletico-mg, .atletico-pr, .bahia, .botafogo, .ceara, .chape, .corinthians, .cruzeiro, .flamengo, .fluminense, .america-mg, .internacional, .palmeiras, .parana, .santos, .sao-paulo, .sport, .vasco, .vitoria{
+    justify-self: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+/* copied box-shadow and background from here https://github.com/wesbos/css-grid/blob/master/17%20-%20CSS%20Grid%20Alignment%20%2B%20Centering/alignment-and-centering-FINISHED.html */ 
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -312,6 +347,20 @@ a.fb:hover, a.yb:hover, a.tw:hover{
         padding: 0.5rem 0.8rem;
         text-decoration: none;
     }
+
+    /* team.html */
+    .team-main{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+        grid-gap: 1rem;
+        padding: 0px 1rem;
+    }
+
+    .team-img{
+        display: grid;
+        height: 8rem;
+        
+    }
 }
 
 
@@ -344,7 +393,21 @@ a.fb:hover, a.yb:hover, a.tw:hover{
     .footer-menu a{
         padding: 0.5rem 0.8rem;
     }
+
+    /* from team.html */
+
+    .team-main{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+        grid-gap: 1rem;
+        padding: 0px 1rem;
+    }
+
+    .team-img{
+        display: grid;
+        height: 8rem;
         
+    }
 }
 
 
@@ -480,5 +543,19 @@ a.fb:hover, a.yb:hover, a.tw:hover{
         width: 100%;
         padding-left: 10px;
         text-align: center;
+    }
+
+    /* from team.html */
+    .team-main{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+        grid-gap: 1rem;
+        padding: 0px 1rem;
+    }
+
+    .team-img{
+        display: grid;
+        height: 6rem;
+        
     }
 }
