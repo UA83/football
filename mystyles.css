@@ -211,16 +211,9 @@ a = aside  */
     margin-top: 20px;
     grid-template-areas: 
       "footer-menu"
-      "social"
       "icons"
       "copyright";
     }
-
-.social{
-    grid-area: social;
-    text-align: center;
-    font-size: 1.05rem;
-}
 
 .icons{
     justify-self: start;
@@ -281,14 +274,14 @@ a.fb:hover, a.yb:hover, a.tw:hover{
 
 .team-main{
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
     grid-gap: 1rem;
     padding: 0px 1rem;
 }
 
 .team-img{
     display: grid;
-    height: 10rem;
+    height: 8rem;
     
 }
 
@@ -514,16 +507,8 @@ a.fb:hover, a.yb:hover, a.tw:hover{
         margin-top: 10px;
         grid-template-areas: 
         "footer-menu"
-        "social"
         "icons"
         "copyright";
-    }
-
-    .social{
-        grid-area: social;
-        justify-self: center;
-        align-self: center;
-
     }
 
     .footer-menu{
