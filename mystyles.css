@@ -308,7 +308,6 @@ a.fb:hover, a.yb:hover, a.tw:hover{
 
 /* ################# contact page ##################### */
 .contact-main{
-    background: #edf1f3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -325,8 +324,8 @@ a.fb:hover, a.yb:hover, a.tw:hover{
 }
 
 .contact-aside{
+    border-left: 1.5px #dbdbdb solid;
     display: grid;
-
     grid-column: 3 / 4;
     padding: 10px;
  }
@@ -356,13 +355,13 @@ label {
 input, textarea, button {
     margin-left: 1rem;
     margin-bottom: 1rem;
-    width: 100%;
+    width: 98%;
 }
 
 select {
     margin-left: 1rem;
     margin-bottom: 1rem;
-    width: 100%;
+    width: 98%;
 }
  
 form button {
