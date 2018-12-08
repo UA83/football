@@ -85,7 +85,7 @@ Wrapper */
 /* Banner with a big image */
 .banner {
 	min-height: 350px;
-	background: url(imgs/banner.jpg);
+	background: url(imgs/banner.webp);
 	background-size: cover;
 	background-position: top;
 	display:flex;
