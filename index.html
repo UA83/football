@@ -49,7 +49,7 @@
 
             <aside class="aside">
                 <div class="live-score">
-                    <h2>Live Score</h2>
+                    <h2 id="livescore">Live Score</h2>
                 </div>
 
                 <div class="box home-team">GRE</div>
@@ -132,6 +132,15 @@
         </footer>
     </div>
     <!--  wrapper Ends  -->
+    <script>
+    window.addEventListener("load", function() {
+        var f = document.getElementById('livescore');
+        setInterval(function() {
+            f.style.display = (f.style.display == 'none' ? '' : 'none');
+        }, 500);
+    
+    }, false);
+</script>
 </body>
 
 </html>
