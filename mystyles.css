@@ -647,4 +647,61 @@ input[type=number]::-webkit-outer-spin-button {
         height: 6rem;
         
     }
+
+
+
+
+
+
+
+
+    /* contact */
+    input, textarea, button {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        width: 95%;
+    }
+
+    select {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        width: 95%;
+    }
+
+    .contact-main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .contact-form{
+        display: grid;
+        grid-column: 1;
+        align-content: center;
+        padding: 10px;
+        align-content: center;
+        /* align-content places the content vertical */
+        justify-content: center;
+        /* justify-content places the content hosrizontal */
+    }
+    
+    .contact-aside{
+        border-left: 1.5px #dbdbdb solid;
+        display: grid;
+        grid-column: 1;
+        padding: 10px;
+     }
+    
+    .contact-aside li, p{
+        padding: 10px;
+    }
+    
+    .contact-map{
+        display: grid;
+        grid-column: 1;
+    }
+
+
 }
+
+
+
