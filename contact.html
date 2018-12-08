@@ -28,33 +28,45 @@
         </div>
         <div class="contact-main">
             <div class="contact-form">
-                <form action="#" method="get">
-                    First name: <input type="text" name="fname">
-                    Last name: <input type="text" name="lname">                    
-                    Email: <input type="email" name="email">
-                    Phone number: <input type="number" name="fnumber">
-                    Last name: <input type="text" name="lname">
-                    <input type="text" name="firstname" value="John">
-                    <textarea rows="4" cols="50">
-                            At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
-                            </textarea> 
 
-                    <input type="submit" value="Submit">
-                    </form> 
->
-                        First name:<input type="text" name="fname"><br>
-                        Last name: <input type="text" name="lname"><br>
-                        E-mail: <input type="email" name="email" autocomplete="on"><br>
-                        <input type="submit">
-                      </form> 
+                <form action="#">
+                    <label for="fname" >First Name</label>
+                    <input type="text" name="fname">
+                    <label for="sname" >Surename Name</label>
+                    <input type="text" name="sname">       
+                    <label for="email" >Email</label>      
+                    <input type="email" name="email">
+                    <label for="phone" >Phone</label>
+                    <input type="number" name="fnumber">
+                    <label for="sel-team" >Select your favorite football team:</label>
+                    <select>
+                        <option value="GRE">GREMIO</option>
+                        <option value="AME">AMERICA</option>
+                        <option value="ATL">ATLETICO-MG</option>
+                        <option value="CAP">ATLECICO-PR</option>
+                        <option value="BAH">BAHIA</option>
+                        <option value="BOT">BOTAFOGO</option>
+                        <option value="CEA">CEARA</option>
+                        <option value="CHA">CHAPECOENSE</option>
+                        <option value="COR">CORINTHIANS</option>
+                        <option value="CRU">CRUZEIRO</option>
+                        <option value="INT">INTERNACIONAL</option>
+                        <option value="PAL">PALMEIRAS</option>
+                        <option value="PAR">PARANA</option>
+                        <option value="FLU">FLUMINENSE</option>
+                        <option value="FLA">FLAMENGO</option>
+                        <option value="SAN">SANTOS</option>
+                        <option value="SAO">SAO PAULO</option>
+                        <option value="SPO">SPORT</option>
+                        <option value="VAS">VASCO</option>
+                        <option value="VIT">VITORIA</option>
+                    </select>
 
-
-
-
-
-
-
-
+                    <label for="comment">Leave a comment here</label>
+                        <textarea>test
+                        </textarea>
+                    <button>Submit</button>
+                </form>
             </div>
             <div class="contact-aside">
                 <ul>

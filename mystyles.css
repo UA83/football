@@ -316,16 +316,23 @@ a.fb:hover, a.yb:hover, a.tw:hover{
 .contact-form{
     display: grid;
     grid-column: 1 / 3;
-}
-
-.contact-aside{
-    display: grid;
-    background: teal;
-    grid-column: 3 / 4;
+    align-content: center;
+    padding: 10px;
     align-content: center;
     /* align-content places the content vertical */
     justify-content: center;
     /* justify-content places the content hosrizontal */
+}
+
+.contact-aside{
+    display: grid;
+
+    grid-column: 3 / 4;
+    padding: 10px;
+ }
+
+.contact-aside li, p{
+    padding: 10px;
 }
 
 .contact-map{
@@ -336,8 +343,51 @@ a.fb:hover, a.yb:hover, a.tw:hover{
 .contact-aside ul {
     list-style-type: none;
     padding: 1rem 1rem;
-    background: #dbdbdb;
 }
+
+
+
+/* For this form I got the idea from https://webdesign.tutsplus.com/tutorials/how-to-build-web-form-layouts-with-css-grid--cms-28776 */
+
+label {
+    padding-left: 1rem;
+}
+ 
+input, textarea, button {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+select {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+ 
+form button {
+    background: lightgrey;
+    padding: 0.7em;
+    border: 0;
+  }
+form button:hover {
+    background: gold;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* got this iframe css from https://www.lifewire.com/iframes-and-css-3468669 
 their example was much more fun then my one, but ir would not suit my site, so did some changes.*/
