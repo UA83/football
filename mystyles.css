@@ -306,19 +306,64 @@ a.fb:hover, a.yb:hover, a.tw:hover{
 }
 /* copied box-shadow and background from here https://github.com/wesbos/css-grid/blob/master/17%20-%20CSS%20Grid%20Alignment%20%2B%20Centering/alignment-and-centering-FINISHED.html */ 
 
+/* ################# contact page ##################### */
+.contact-main{
+    background: #edf1f3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-form{
+    display: grid;
+    grid-column: 1 / 3;
+}
+
+.contact-aside{
+    display: grid;
+    background: teal;
+    grid-column: 3 / 4;
+    align-content: center;
+    /* align-content places the content vertical */
+    justify-content: center;
+    /* justify-content places the content hosrizontal */
+}
+
+.contact-map{
+    display: grid;
+    grid-column: 1 / -1;
+}
+
+.contact-aside ul {
+    list-style-type: none;
+    padding: 1rem 1rem;
+    background: #dbdbdb;
+}
+
+/* got this iframe css from https://www.lifewire.com/iframes-and-css-3468669 
+their example was much more fun then my one, but ir would not suit my site, so did some changes.*/
+iframe {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+
+/* got this from https://blog.rudolphk.co.za/css-tip-remove-spinner-on-input-of-number-9fc4d9cac121 */
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 
 
 
 
-
-
-
-
-
-
-
-/* d) The Standard Bootstrap 4.x Breakpoints
+/* I used The Standard Bootstrap 4.x Breakpoints
 
 @media all and (max-width: 1199px) { ... } 
 @media all and (max-width: 991px) { ... } 
